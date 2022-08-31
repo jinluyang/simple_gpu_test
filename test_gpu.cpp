@@ -3,6 +3,7 @@
 #include <cuda_runtime.h>
 int main() {
   //cuInit(0);
+  // std::cout << cudaGetErrorString(cudaGetLastError()) << std::endl;
   int deviceCount;
   cudaError_t e = cudaGetDeviceCount(&deviceCount);
   if (e != cudaSuccess)
